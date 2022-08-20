@@ -1,0 +1,30 @@
+/**
+  |cmmb============================
+  | logo 
+  |============================
+*/
+
+.logo {
+	display: inline-block;
+
+	font-family: "Raleway", cursive;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	text-decoration: inherit;
+
+	color: var(--black-color);
+
+		&__accent {
+			color: var(--accent-text-color);
+}
+
+		&__footer {
+			margin-bottom: 20px;
+
+			color: var(--wite-color);
+}
+
+}
+
+//  end  --- logo   ---- end

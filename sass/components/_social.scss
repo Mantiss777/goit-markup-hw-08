@@ -1,0 +1,75 @@
+/**
+  |cmmb============================
+  |  social link  Посилання на соц. мережі
+  |============================
+*/
+
+.social__list {
+	display: flex;
+	justify-content: space-between;
+
+	padding-left: 32px;
+	padding-right: 32px;
+}
+
+.social__link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 44px;
+	height: 44px;
+
+	text-decoration: none;
+	border: none;
+	cursor: pointer;
+
+
+	color: var(--icon-svg);
+	border-radius: 50%;
+
+	transition: color var(--timing-function), fill var(--timing-function), background-color var(--timing-function) ;
+
+		&:hover,
+		&__link:focus {
+			background-color: var(--accent-text-color);
+			color: var(--wite-color);
+			/* outline: none; */
+}
+
+}
+
+.social__icon {
+	width: 20px;
+	height: 20px;
+
+	fill: currentColor;
+}
+
+
+
+/*===============================
+		--- social link in footer  ---
+=================================*/
+
+
+
+.social__wrap--footer {
+	margin-left: 70px;
+}
+
+.social__list--footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.social__link--footer {
+	margin-right: 10px;
+
+	color: var(--wite-color);
+	background-color: var(--icon-bg);
+
+}
+
+
+// end --- social link  --- end

@@ -1,0 +1,23 @@
+
+/**
+  |cmmb============================
+  |      button
+  |============================
+*/
+.button {
+	padding: 10px 32px;
+
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+
+	color: var(--wite-color);
+	background-color: var(--accent-text-color);
+	border: 1px solid var(--accent-text-color);
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+
+// end --- button

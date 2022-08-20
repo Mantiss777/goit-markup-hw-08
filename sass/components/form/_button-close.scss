@@ -1,0 +1,39 @@
+
+/*  Button to close the modal window ---  Кнопка закриття модального вікна */
+.button-close {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: absolute;
+	top: 8px;
+	right: 8px;
+
+	width: 30px;
+	height: 30px;
+
+	text-decoration: none;
+	border: none;
+	cursor: pointer;
+
+	color: var(--black-color);
+	background-color: var(--primary-bg-color) ;
+	border: 1px solid var(--modal-border);
+	border-radius: 50%;
+
+
+		&__icon {
+			width: 11px;
+			height: 11px;
+			fill: currentColor;
+}
+
+		&:hover,
+		&:focus {
+			color: var(--accent-text-color);
+}
+
+}
+
+
+/* end ---  Button to close the modal window ---  Кнопка закриття модального вікна --- end */

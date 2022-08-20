@@ -1,0 +1,55 @@
+
+/**
+  |cmmb============================
+  |  about --- What are we doing - Чим ми займаємося
+  |============================
+*/
+.about {
+	padding-top: 0;
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__wrap{
+		position: relative;
+
+	}
+
+	&__label {
+		position: absolute;
+		bottom: 0;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		width: 370px;
+		height: 70px;
+
+		background: var(--bg-absolut-about);
+
+}
+
+&__title {
+
+	margin-top: 0;
+	margin-bottom: 0;
+
+	font-size: 14px;
+	line-height: 1.14;
+	text-transform: uppercase;
+	text-align: center;
+
+	color: var(--wite-color);
+}
+
+
+
+}
+
+
+
+
+// end --- What are we doing - Чим ми займаємося  ---end

@@ -1,0 +1,17 @@
+
+/**
+  |============================
+  | 			Header 
+  |============================
+*/
+.header {
+	background-color: var(--wite-color);
+	border-bottom: 1px solid var(--border-color);
+
+		&__container {
+			display: flex;
+			align-items: center;
+}
+
+}
+/* end --- Header --- end*/
