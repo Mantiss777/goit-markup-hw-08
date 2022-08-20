@@ -2,18 +2,36 @@
 		Regular clients
 =================================*/
 .client{
+	  @include section;
 
 	&__list {
 		display: flex;
 		justify-content: space-between;
+		flex-wrap:wrap;
+		gap: 30px;
 	}
 
 	&__link {
-		width: 170px;
+		// width: 170px;
 		height: 92px;
 
+
+	@include mq(mob) {
+        width: 210px;
+    }
+    @include mq(tab) {
+        width: 226px;
+    }
+    @include mq(desk) {
+        width: 170px;
+    }
+
+
+
+
+
 		display: flex;
-		align-items: center;
+				align-items: center;
 		justify-content: center;
 
 		fill: var(--icon-svg);

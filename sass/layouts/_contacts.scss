@@ -16,14 +16,23 @@
 	& .contact__item + .contact__item{
 		margin-left: 50px;
 }
-}
 
+
+}
 
 
 .contact__data {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+
+
+	@include mq(not-desk) {
+		font-size: 12px;
+		line-height: 1.16;
+
+}
 
 	padding-top: 24px;
 	padding-bottom: 24px;

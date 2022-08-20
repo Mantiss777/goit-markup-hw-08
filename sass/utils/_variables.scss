@@ -1,6 +1,11 @@
 /*  Global variables --- Глобальні змінні */
 :root {
-	/* color */
+	  /* Fonts */
+  --main-font: 'Open Sans', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+
+	
+	/* Text colors */
 	--primary-text-color: #757575;
 	--title-text-color: #212121;
 	--accent-text-color: #2196f3;
@@ -26,6 +31,8 @@
 	--border-color: #eeeeee;
 	--modal-border:rgba(0, 0, 0, 0.1);
 	--placeholder-color: rgba(117, 117, 117, 0.5);;
+
+     /* Grid */	
 }
 
 

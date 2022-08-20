@@ -17,6 +17,12 @@
 	border: 1px solid var(--accent-text-color);
 	border-radius: 4px;
 	cursor: pointer;
+
+
+		@include mq(not-desk) {
+			padding: 10px 24px;
+   		}
+	
 }
 
 

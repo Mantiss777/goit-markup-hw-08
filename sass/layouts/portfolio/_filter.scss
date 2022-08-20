@@ -9,11 +9,13 @@
 .filter {
 	display: flex;
 	justify-content: center;
+	flex-wrap:wrap;
 	margin-bottom: 65px;
 
-	& &__item + &__item {
-	margin-left: 8px;
-}
+	gap: 8px;
+// 	& &__item + &__item {
+// 	margin-left: 8px;
+// }
 }
 
 .filter__button {

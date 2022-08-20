@@ -3,14 +3,24 @@
 .example__list {
 	display: flex;
 	flex-wrap: wrap;
-	margin: -15px;
+	gap: 30px;
+	
 
 
 }
 
 .example__item {
+	
+		
+		@include mq(mob) {
+			width: 450px;
+					}
+		@include mq(tab) {
+			width: 354px;
+		}
+		@include mq(desk) {
 			width: 370px;
-			margin: 15px;
+   		}
 }
 
 
@@ -48,7 +58,7 @@
 
 }
 
-.example__p {
+.example__description {
 	margin-top: 0;
 	margin-bottom: 0;
 
@@ -69,6 +79,7 @@
 .example__wrap {
 	position: relative;
 	overflow: hidden;
+	
 	
 }
 

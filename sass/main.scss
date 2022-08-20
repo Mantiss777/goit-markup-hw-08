@@ -1,10 +1,14 @@
-// Base styles
-@import './base/reset';
-@import './base/common';
-
 // Utils styles
 @import './utils/variables';
 @import './utils/visually-hidden';
+@import './utils/decimals';
+@import './utils/mixins';
+
+
+// Base styles
+@import './base/reset';
+@import './base/common';
+@import './base/container';
 
 
 // Components styles
@@ -12,6 +16,7 @@
 @import './components/button';
 @import './components/social';
 @import './components/subscription';
+@import './components/logo';
 
 
 // Components/form styles
@@ -25,7 +30,6 @@
 // Layouts styles
 
 @import './layouts/header';
-@import './layouts/logo';
 @import './layouts/navigation';
 @import './layouts/contacts';
 @import './layouts/hero';

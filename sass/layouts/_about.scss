@@ -5,11 +5,27 @@
   |============================
 */
 .about {
+  @include section;
+
+		@include mq(mob-only) {
+    	display: none;
+  }
+
+  		@include mq(tab-only) {
+    	display: none;
+  }
+
+
+ 
+
 	padding-top: 0;
 
 	&__list {
 		display: flex;
 		justify-content: space-between;
+
+
+
 	}
 
 	&__wrap{

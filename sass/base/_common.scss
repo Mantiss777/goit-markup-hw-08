@@ -5,7 +5,7 @@
 */
 
 body {
-	font-family: "Roboto", sans-serif;
+	font-family: var(--main-font);
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
@@ -29,18 +29,16 @@ body {
 
 		color: var(--title-text-color);
 
-}
+	@include mq(not-desk) {
+		font-size: 28px;
+		line-height: 1.17;
+
+		}
 
 }
 
-
-.container {
-	width: 1200px;
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: 15px;
-	padding-right: 15px;
 }
+
 
 
 /*========================================
@@ -53,6 +51,7 @@ body {
 .section_list {
 	display: flex;
 	justify-content: space-between;
+	
 }
 
 
