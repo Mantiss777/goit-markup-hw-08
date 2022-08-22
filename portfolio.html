@@ -67,7 +67,107 @@
 						</li>
 					</ul>
 				</div>
+
+
+				<!-- burger menu -->
+				<button class="mobile-btn js-open-menu" aria-expanded="false">
+					<svg class="mobile-btn-icon" width="40" height="40">
+						<use href="./images/icons.svg#menu-burger"></use>
+					</svg>
+				</button>
 			</div>
+
+			<!-- mobile-menu -->
+			<div class="backdrop backdrop--hidden js-menu-container">
+				<div class="mobile-menu">
+					<button class="mobile-menu-btn js-close-menu" type="button">
+						<svg width="40" height="40">
+							<use href="./images/icons.svg#menu-close"></use>
+						</svg>
+					</button>
+
+					<ul class="mobile-menu-list">
+						<li class="mobile-menu-item">
+							<a href="./index.html" class="mobile-menu-link">Студія</a>
+						</li>
+						<li class="mobile-menu-item">
+							<a href="./portfolio.html" class="mobile-menu-link">Портфоліо</a>
+						</li>
+						<li class="mobile-menu-item">
+							<a href="" class="mobile-menu-link">Контакти</a>
+						</li>
+					</ul>
+
+					<div class="mobile-menu-group">
+						<ul>
+							<li>
+								<a class="contact__phone--mob" href="tel:+380961111111">+38 096 111 11 11</a>
+							</li>
+							<li>
+								<a class="contact__email--mob" href="mailto:info@devstudio.com">info@devstudio.com</a>
+							</li>
+						</ul>
+					</div>
+
+						<ul class="social__list--mob">
+							<li>
+								<a
+									class="social__link--mob"
+									href="https://www.instagram.com"
+									target="_blank"
+									rel="nofollow noopener noreferrer"
+									aria-label="instagram"
+								>
+									Instagram
+								</a>
+							</li>
+							<li>
+								<a
+									class="social__link--mob"
+									href="https://twitter.com"
+									target="_blank"
+									rel="nofollow noopener noreferrer"
+									aria-label="twitter"
+								>
+									Twitter
+								</a>
+							</li>
+							<li>
+								<a
+									class="social__link--mob"
+									href="https://www.facebook.com"
+									target="_blank"
+									rel="nofollow noopener noreferrer"
+									aria-label="facebook"
+								>
+									Facebook
+								</a>
+							</li>
+							<li>
+								<a
+									class="social__link--mob"
+									href="https://www.linkedin.com"
+									target="_blank"
+									rel="nofollow noopener noreferrer"
+									aria-label="linkedin"
+								>
+									Linkedin
+								</a>
+							</li>
+						</ul>
+					</ul>
+				</div>
+			</div>
+
+
+
+
+
+			</div>
+
+
+
+
 		</header>
 
 		<!-- section-portfolio-->
@@ -97,7 +197,74 @@
 					<li class="example__item">
 						<a class="example__link" href="">
 							<div class="example__wrap">
-								<img src="./images/img-008.jpg" alt="Ноутбук с изображением сайта" />
+
+
+									
+					<picture>
+						<!-- Desktop screen -->
+						<source
+						media="(min-width: 1200px)"
+						srcset="
+							./images/img-08@1x_desk.webp 1x,
+							./images/img-08@2x_desk.webp 2x
+						"
+						type="image/webp"
+						/>
+						<source
+						media="(min-width: 1200px)"
+						srcset="
+							./images/img-08@1x_desk.jpg 1x,
+							./images/img-08@2x_desk.jpg 2x
+						"
+						type="image/jpg"
+						/>
+
+						<!-- Tablet screen -->
+						<source
+						media="(min-width: 768px)"
+						srcset="
+							./images/img-08@1x_tab.webp 1x,
+							./images/img-08@2x_tab.webp 2x
+						"
+						type="image/webp"
+						/>
+						<source
+						media="(min-width: 768px)"
+						srcset="
+							./images/img-08@1x_tab.jpg 1x,
+							./images/img-08@2x_tab.jpg 2x
+						"
+						type="image/jpg"
+						/>
+						<!-- Mobile screen -->
+						<source
+						media="(max-width: 767px)"
+						srcset="
+							./images/img-08@1x_mob.webp 1x,
+							./images/img-08@2x_mob.webp 2x
+						"
+						type="image/webp"
+						/>
+						<source
+						media="(max-width: 767px)"
+						srcset="
+							./images/img-08@1x_mob.jpg 1x,
+							./images/img-08@2x_mob.jpg 2x
+						"
+						type="image/jpg"
+						/>
+							<img src="./images/img-08@1x_mob.jpg"
+							alt="Ноутбук с изображением сайта"
+							width="450"
+							height="294"
+							loading="lazy"
+							/>
+					</picture>
+
+
+
+
+
 								<div class="example__ticket">
 									<p class="example__comment">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -114,7 +281,78 @@
 					<li class="example__item">
 						<a class="example__link" href="">
 							<div class="example__wrap">
-								<img src="./images/img-009.jpg" alt="борьба баскетболистов за мяч" />
+
+
+
+
+
+									
+					<picture>
+						<!-- Desktop screen -->
+						<source
+						media="(min-width: 1200px)"
+						srcset="
+							./images/img-09@1x_desk.webp 1x,
+							./images/img-09@2x_desk.webp 2x
+						"
+						type="image/webp"
+						/>
+						<source
+						media="(min-width: 1200px)"
+						srcset="
+							./images/img-09@1x_desk.jpg 1x,
+							./images/img-09@2x_desk.jpg 2x
+						"
+						type="image/jpg"
+						/>
+
+						<!-- Tablet screen -->
+						<source
+						media="(min-width: 768px)"
+						srcset="
+							./images/img-09@1x_tab.webp 1x,
+							./images/img-09@2x_tab.webp 2x
+						"
+						type="image/webp"
+						/>
+						<source
+						media="(min-width: 768px)"
+						srcset="
+							./images/img-09@1x_tab.jpg 1x,
+							./images/img-09@2x_tab.jpg 2x
+						"
+						type="image/jpg"
+						/>
+						<!-- Mobile screen -->
+						<source
+						media="(max-width: 767px)"
+						srcset="
+							./images/img-09@1x_mob.webp 1x,
+							./images/img-09@2x_mob.webp 2x
+						"
+						type="image/webp"
+						/>
+						<source
+						media="(max-width: 767px)"
+						srcset="
+							./images/img-09@1x_mob.jpg 1x,
+							./images/img-09@2x_mob.jpg 2x
+						"
+						type="image/jpg"
+						/>
+							<img src="./images/img-09@1x_mob.jpg"
+							alt="борьба баскетболистов за мяч"
+							width="450"
+							height="294"
+							loading="lazy"
+							/>
+					</picture>
+
+
+
+
+
+
 								<div class="example__ticket">
 									<p class="example__comment">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -131,7 +369,78 @@
 					<li class="example__item">
 						<a class="example__link" href="">
 							<div class="example__wrap">
-								<img src="./images/img-010.jpg" alt="риба логотип ресторана" />
+
+
+									
+					<picture>
+						<!-- Desktop screen -->
+						<source
+						media="(min-width: 1200px)"
+						srcset="
+							./images/img-10@1x_desk.webp 1x,
+							./images/img-10@2x_desk.webp 2x
+						"
+						type="image/webp"
+						/>
+						<source
+						media="(min-width: 1200px)"
+						srcset="
+							./images/img-10@1x_desk.jpg 1x,
+							./images/img-10@2x_desk.jpg 2x
+						"
+						type="image/jpg"
+						/>
+
+						<!-- Tablet screen -->
+						<source
+						media="(min-width: 768px)"
+						srcset="
+							./images/img-10@1x_tab.webp 1x,
+							./images/img-10@2x_tab.webp 2x
+						"
+						type="image/webp"
+						/>
+						<source
+						media="(min-width: 768px)"
+						srcset="
+							./images/img-10@1x_tab.jpg 1x,
+							./images/img-10@2x_tab.jpg 2x
+						"
+						type="image/jpg"
+						/>
+						<!-- Mobile screen -->
+						<source
+						media="(max-width: 767px)"
+						srcset="
+							./images/img-10@1x_mob.webp 1x,
+							./images/img-10@2x_mob.webp 2x
+						"
+						type="image/webp"
+						/>
+						<source
+						media="(max-width: 767px)"
+						srcset="
+							./images/img-10@1x_mob.jpg 1x,
+							./images/img-10@2x_mob.jpg 2x
+						"
+						type="image/jpg"
+						/>
+							<img src="./images/img-10@1x_mob.jpg"
+							alt="риба логотип ресторана"
+							width="450"
+							height="294"
+							loading="lazy"
+							/>
+					</picture>
+
+
+
+
+
+
+
+
+
 								<div class="example__ticket">
 									<p class="example__comment">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -148,7 +457,81 @@
 					<li class="example__item">
 						<a class="example__link" href="">
 							<div class="example__wrap">
-								<img src="./images/img-011.jpg" alt="чорные наушники" />
+
+
+
+									
+					<picture>
+						<!-- Desktop screen -->
+						<source
+						media="(min-width: 1200px)"
+						srcset="
+							./images/img-11@1x_desk.webp 1x,
+							./images/img-11@2x_desk.webp 2x
+						"
+						type="image/webp"
+						/>
+						<source
+						media="(min-width: 1200px)"
+						srcset="
+							./images/img-11@1x_desk.jpg 1x,
+							./images/img-11@2x_desk.jpg 2x
+						"
+						type="image/jpg"
+						/>
+
+						<!-- Tablet screen -->
+						<source
+						media="(min-width: 768px)"
+						srcset="
+							./images/img-11@1x_tab.webp 1x,
+							./images/img-11@2x_tab.webp 2x
+						"
+						type="image/webp"
+						/>
+						<source
+						media="(min-width: 768px)"
+						srcset="
+							./images/img-11@1x_tab.jpg 1x,
+							./images/img-11@2x_tab.jpg 2x
+						"
+						type="image/jpg"
+						/>
+						<!-- Mobile screen -->
+						<source
+						media="(max-width: 767px)"
+						srcset="
+							./images/img-11@1x_mob.webp 1x,
+							./images/img-11@2x_mob.webp 2x
+						"
+						type="image/webp"
+						/>
+						<source
+						media="(max-width: 767px)"
+						srcset="
+							./images/img-11@1x_mob.jpg 1x,
+							./images/img-11@2x_mob.jpg 2x
+						"
+						type="image/jpg"
+						/>
+							<img src="./images/img-11@1x_mob.jpg"
+							alt="чорные наушники"
+							width="450"
+							height="294"
+							loading="lazy"
+							/>
+					</picture>
+
+
+
+
+
+
+
+
+
+
+
 								<div class="example__ticket">
 									<p class="example__comment">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -165,7 +548,79 @@
 					<li class="example__item">
 						<a class="example__link" href="">
 							<div class="example__wrap">
-								<img src="./images/img-012.jpg" alt="две коробки" />
+
+
+
+									
+					<picture>
+						<!-- Desktop screen -->
+						<source
+						media="(min-width: 1200px)"
+						srcset="
+							./images/img-12@1x_desk.webp 1x,
+							./images/img-12@2x_desk.webp 2x
+						"
+						type="image/webp"
+						/>
+						<source
+						media="(min-width: 1200px)"
+						srcset="
+							./images/img-12@1x_desk.jpg 1x,
+							./images/img-12@2x_desk.jpg 2x
+						"
+						type="image/jpg"
+						/>
+
+						<!-- Tablet screen -->
+						<source
+						media="(min-width: 768px)"
+						srcset="
+							./images/img-12@1x_tab.webp 1x,
+							./images/img-12@2x_tab.webp 2x
+						"
+						type="image/webp"
+						/>
+						<source
+						media="(min-width: 768px)"
+						srcset="
+							./images/img-12@1x_tab.jpg 1x,
+							./images/img-12@2x_tab.jpg 2x
+						"
+						type="image/jpg"
+						/>
+						<!-- Mobile screen -->
+						<source
+						media="(max-width: 767px)"
+						srcset="
+							./images/img-12@1x_mob.webp 1x,
+							./images/img-12@2x_mob.webp 2x
+						"
+						type="image/webp"
+						/>
+						<source
+						media="(max-width: 767px)"
+						srcset="
+							./images/img-12@1x_mob.jpg 1x,
+							./images/img-12@2x_mob.jpg 2x
+						"
+						type="image/jpg"
+						/>
+							<img src="./images/img-12@1x_mob.jpg"
+							alt="две коробки"
+							width="450"
+							height="294"
+							loading="lazy"
+							/>
+					</picture>
+
+
+
+
+
+
+
+
+
 								<div class="example__ticket">
 									<p class="example__comment">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -182,7 +637,81 @@
 					<li class="example__item">
 						<a class="example__link" href="">
 							<div class="example__wrap">
-								<img src="./images/img-013.jpg" alt="монитор компютера с изображением сайта" />
+
+
+
+
+									
+					<picture>
+						<!-- Desktop screen -->
+						<source
+						media="(min-width: 1200px)"
+						srcset="
+							./images/img-13@1x_desk.webp 1x,
+							./images/img-13@2x_desk.webp 2x
+						"
+						type="image/webp"
+						/>
+						<source
+						media="(min-width: 1200px)"
+						srcset="
+							./images/img-13@1x_desk.jpg 1x,
+							./images/img-13@2x_desk.jpg 2x
+						"
+						type="image/jpg"
+						/>
+
+						<!-- Tablet screen -->
+						<source
+						media="(min-width: 768px)"
+						srcset="
+							./images/img-13@1x_tab.webp 1x,
+							./images/img-13@2x_tab.webp 2x
+						"
+						type="image/webp"
+						/>
+						<source
+						media="(min-width: 768px)"
+						srcset="
+							./images/img-13@1x_tab.jpg 1x,
+							./images/img-13@2x_tab.jpg 2x
+						"
+						type="image/jpg"
+						/>
+						<!-- Mobile screen -->
+						<source
+						media="(max-width: 767px)"
+						srcset="
+							./images/img-13@1x_mob.webp 1x,
+							./images/img-13@2x_mob.webp 2x
+						"
+						type="image/webp"
+						/>
+						<source
+						media="(max-width: 767px)"
+						srcset="
+							./images/img-13@1x_mob.jpg 1x,
+							./images/img-13@2x_mob.jpg 2x
+						"
+						type="image/jpg"
+						/>
+							<img src="./images/img-13@1x_mob.jpg"
+							alt="монитор компютера с изображением сайта"
+							width="450"
+							height="294"
+							loading="lazy"
+							/>
+					</picture>
+
+
+
+
+
+
+
+
+
+
 								<div class="example__ticket">
 									<p class="example__comment">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -199,7 +728,79 @@
 					<li class="example__item">
 						<a class="example__link" href="">
 							<div class="example__wrap">
-								<img src="./images/img-014.jpg" alt="книга с фотографичми" />
+
+
+
+
+									
+					<picture>
+						<!-- Desktop screen -->
+						<source
+						media="(min-width: 1200px)"
+						srcset="
+							./images/img-14@1x_desk.webp 1x,
+							./images/img-14@2x_desk.webp 2x
+						"
+						type="image/webp"
+						/>
+						<source
+						media="(min-width: 1200px)"
+						srcset="
+							./images/img-14@1x_desk.jpg 1x,
+							./images/img-14@2x_desk.jpg 2x
+						"
+						type="image/jpg"
+						/>
+
+						<!-- Tablet screen -->
+						<source
+						media="(min-width: 768px)"
+						srcset="
+							./images/img-14@1x_tab.webp 1x,
+							./images/img-14@2x_tab.webp 2x
+						"
+						type="image/webp"
+						/>
+						<source
+						media="(min-width: 768px)"
+						srcset="
+							./images/img-14@1x_tab.jpg 1x,
+							./images/img-14@2x_tab.jpg 2x
+						"
+						type="image/jpg"
+						/>
+						<!-- Mobile screen -->
+						<source
+						media="(max-width: 767px)"
+						srcset="
+							./images/img-14@1x_mob.webp 1x,
+							./images/img-14@2x_mob.webp 2x
+						"
+						type="image/webp"
+						/>
+						<source
+						media="(max-width: 767px)"
+						srcset="
+							./images/img-14@1x_mob.jpg 1x,
+							./images/img-14@2x_mob.jpg 2x
+						"
+						type="image/jpg"
+						/>
+							<img src="./images/img-14@1x_mob.jpg"
+							alt="книга с фотографичми"
+							width="450"
+							height="294"
+							loading="lazy"
+							/>
+					</picture>
+
+
+
+
+
+
+
+
 								<div class="example__ticket">
 									<p class="example__comment">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -216,7 +817,80 @@
 					<li class="example__item">
 						<a class="example__link" href="">
 							<div class="example__wrap">
-								<img src="./images/img-015.jpg" alt="лейба с натписю" />
+
+
+
+									
+					<picture>
+						<!-- Desktop screen -->
+						<source
+						media="(min-width: 1200px)"
+						srcset="
+							./images/img-15@1x_desk.webp 1x,
+							./images/img-15@2x_desk.webp 2x
+						"
+						type="image/webp"
+						/>
+						<source
+						media="(min-width: 1200px)"
+						srcset="
+							./images/img-15@1x_desk.jpg 1x,
+							./images/img-15@2x_desk.jpg 2x
+						"
+						type="image/jpg"
+						/>
+
+						<!-- Tablet screen -->
+						<source
+						media="(min-width: 768px)"
+						srcset="
+							./images/img-15@1x_tab.webp 1x,
+							./images/img-15@2x_tab.webp 2x
+						"
+						type="image/webp"
+						/>
+						<source
+						media="(min-width: 768px)"
+						srcset="
+							./images/img-15@1x_tab.jpg 1x,
+							./images/img-15@2x_tab.jpg 2x
+						"
+						type="image/jpg"
+						/>
+						<!-- Mobile screen -->
+						<source
+						media="(max-width: 767px)"
+						srcset="
+							./images/img-15@1x_mob.webp 1x,
+							./images/img-15@2x_mob.webp 2x
+						"
+						type="image/webp"
+						/>
+						<source
+						media="(max-width: 767px)"
+						srcset="
+							./images/img-15@1x_mob.jpg 1x,
+							./images/img-15@2x_mob.jpg 2x
+						"
+						type="image/jpg"
+						/>
+							<img src="./images/img-15@1x_mob.jpg"
+							alt="лейба с натписю"
+							width="450"
+							height="294"
+							loading="lazy"
+							/>
+					</picture>
+
+
+
+
+
+
+
+
+
+
 								<div class="example__ticket">
 									<p class="example__comment">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -233,7 +907,79 @@
 					<li class="example__item">
 						<a class="example__link" href="">
 							<div class="example__wrap">
-								<img src="./images/img-016.jpg" alt="ноутбук на столе в процесе работи" />
+
+
+
+
+									
+					<picture>
+						<!-- Desktop screen -->
+						<source
+						media="(min-width: 1200px)"
+						srcset="
+							./images/img-16@1x_desk.webp 1x,
+							./images/img-16@2x_desk.webp 2x
+						"
+						type="image/webp"
+						/>
+						<source
+						media="(min-width: 1200px)"
+						srcset="
+							./images/img-16@1x_desk.jpg 1x,
+							./images/img-16@2x_desk.jpg 2x
+						"
+						type="image/jpg"
+						/>
+
+						<!-- Tablet screen -->
+						<source
+						media="(min-width: 768px)"
+						srcset="
+							./images/img-16@1x_tab.webp 1x,
+							./images/img-16@2x_tab.webp 2x
+						"
+						type="image/webp"
+						/>
+						<source
+						media="(min-width: 768px)"
+						srcset="
+							./images/img-16@1x_tab.jpg 1x,
+							./images/img-16@2x_tab.jpg 2x
+						"
+						type="image/jpg"
+						/>
+						<!-- Mobile screen -->
+						<source
+						media="(max-width: 767px)"
+						srcset="
+							./images/img-16@1x_mob.webp 1x,
+							./images/img-16@2x_mob.webp 2x
+						"
+						type="image/webp"
+						/>
+						<source
+						media="(max-width: 767px)"
+						srcset="
+							./images/img-16@1x_mob.jpg 1x,
+							./images/img-16@2x_mob.jpg 2x
+						"
+						type="image/jpg"
+						/>
+							<img src="./images/img-16@1x_mob.jpg"
+							alt="ноутбук на столе в процесе работи"
+							width="450"
+							height="294"
+							loading="lazy"
+							/>
+					</picture>
+
+
+
+
+
+
+
+	
 								<div class="example__ticket">
 									<p class="example__comment">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -346,5 +1092,33 @@
 				</div>
 			</div>
 		</footer>
+
+		<script src="./js/header-scroll.js"></script>
+		<script src="./js/modal.js"></script>
+
+		<!-- Бібліотека для правильного блокування скролу (додаємо перед скриптом для моб.меню) -->
+		<script
+			defer
+			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+			crossorigin="anonymous"
+		></script>
+
+		<script src="./js/mobile-menu.js"></script>
+
+		<!-- Add Input mask https://github.com/RobinHerbots/Inputmask -->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+			integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.7/jquery.inputmask.min.js"
+			integrity="sha512-jTgBq4+dMYh73dquskmUFEgMY5mptcbqSw2rmhOZZSJjZbD2wMt0H5nhqWtleVkyBEjmzid5nyERPSNBafG4GQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script src="./js/inputmask.js"></script>
 	</body>
 </html>

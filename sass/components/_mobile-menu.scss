@@ -1,0 +1,171 @@
+
+// мобільне бургер меню
+.mobile-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin-left: auto;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  @include mq(tab) {
+    display: none;
+  }
+}
+
+
+
+
+.mobile-menu {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  max-width: 480px;
+  height: inherit;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 48px 40px;
+
+  background-color: var(--primary-bg-color);
+
+  transform: translateX(0);
+  transition: transform var(--timing-function);
+
+  .backdrop--hidden & {
+    transform: translateX(100%);
+  }
+}
+
+// кнопка закриття
+.mobile-menu-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  width: 40px;
+  height: 40px;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+ fill: var(--accent-text-color);
+
+ }
+
+}
+
+
+
+
+
+.mobile-menu-list {
+  // @extend %list;
+
+  margin-bottom: auto;
+  
+}
+
+.mobile-menu-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu-link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: calc(47/40);
+  letter-spacing: 0.02em;
+
+  color: var(--title-text-color); 
+
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
+}
+
+
+
+.mobile-menu-group {
+  margin-bottom: 64px;
+}
+
+.contact__phone--mob {
+  display: block;
+  margin-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 34px;
+  line-height: calc(40/34);
+  letter-spacing: 0.02em;
+
+  color: var(--accent-text-color);
+  
+}
+
+.contact__email--mob {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: calc(28/24);
+  letter-spacing: 0.02em;
+
+  color:var(--primary-text-color);
+  
+}
+
+
+.social__list--mob{
+  display: flex;
+	
+
+
+}
+
+.social__link--mob{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+	text-decoration: none;
+	// border: none;
+	cursor: pointer;
+
+
+	color: var(--accent-text-color);
+	
+
+	transition: color var(--timing-function);
+		&:hover,
+		&__link:focus {
+			color: var(--accent-text-color);
+	
+}
+
+  border-right:  1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px ;
+  padding-left: 10px;
+
+
+  
+}
+
+// .social__link--mob:first-child {
+   
+//   border-right: 0;
+// }
+
+

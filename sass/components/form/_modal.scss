@@ -5,6 +5,34 @@
   |============================
 */
 
+// start --- backdrop  ---start
+
+.backdrop {
+	z-index: 1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--modal-bg);
+
+	transition:opacity var(--timing-function);
+
+
+	&--hidden {
+		opacity: 0;
+		pointer-events: none;
+		visibility: hidden;
+	
+} 
+
+}
+
+
+// end--- backdrop  ---end
+
+
+
 
 
 .modal {
@@ -21,7 +49,245 @@
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
 
+
+	@include mq(not-desk) {
+		min-width: 450px;
+		min-height: 609px;
+}
+
 }
 
 
 // end --- modal -Модальне вікно --- end
+
+
+
+/*  Button to close the modal window ---  Кнопка закриття модального вікна */
+.button-close {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: absolute;
+	top: 8px;
+	right: 8px;
+
+	width: 30px;
+	height: 30px;
+
+	text-decoration: none;
+	border: none;
+	cursor: pointer;
+
+	color: var(--black-color);
+	background-color: var(--primary-bg-color) ;
+	border: 1px solid var(--modal-border);
+	border-radius: 50%;
+
+
+		&__icon {
+			width: 11px;
+			height: 11px;
+			fill: currentColor;
+}
+
+		&:hover,
+		&:focus {
+			color: var(--accent-text-color);
+}
+
+}
+
+
+/* end ---  Button to close the modal window ---  Кнопка закриття модального вікна --- end */
+
+
+
+/**
+  |============================
+  | register form 
+  |============================
+*/
+
+
+
+.register__title {
+	display: block;
+	margin-bottom: 12px;
+
+	font-size: 20px;
+	line-height: 1.15;
+	text-align: center;
+	letter-spacing: 0.03em;
+
+	color: var(--title-text-color);	
+}
+
+
+.register__group {
+	margin-bottom: 20px;
+}
+
+
+.register__label {
+	font-size: 12px;
+	text-align: start;
+	line-height: 14px;
+	letter-spacing: 0.01em;
+	color: #757575;
+}
+
+.register__icon{
+	position: absolute;
+	bottom: 11px;
+	left: 12px;
+
+	fill: var(--title-text-color);
+	transition: fill var(--timing-function);
+	
+
+}
+
+.register__wrap  {
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+
+	&:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+}
+
+.register__field {
+	height: 40px;
+	padding: 12px 42px;
+
+	font-size: 14px;
+	line-height: 16px;
+
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	outline: transparent;
+
+	transition: border-color var(--timing-function);
+
+		&:focus {
+			border-color: var(--accent-text-color);
+}
+
+		&:focus + .register__icon {
+			fill: var(--accent-text-color);
+}
+
+}
+
+
+.register__message {
+	height: 120px;
+	padding: 12px 16px;
+
+	font-size: 12px;
+	line-height: 14px;
+	letter-spacing: 0.01em;
+	color: #303030;
+
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	outline: transparent;
+	resize: none;
+
+	transition: border-color var(--timing-function);
+
+		&:focus {
+			border-color: var(--accent-text-color);
+}
+
+		&::placeholder {
+			color: var(--placeholder-color);
+}
+
+}
+
+// end --- register form  ---end
+
+
+
+/* agreement with the terms of the contract --- погодження з умовами договору  */
+
+.agreement {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+
+	margin-bottom: 30px;
+}
+
+.agreement__checkbox:focus + .agreement__icon {
+	outline: 2px solid var(--accent-text-color);
+	outline-offset: 1px;
+	border-radius: 2px;
+}
+
+.agreement__icon--uncheck{
+	transition: opacity var(--timing-function);
+}
+
+.agreement__checkbox:checked + .agreement__icon > .agreement__icon--uncheck {
+	opacity: 0;
+}
+
+.agreement__icon--check {
+	opacity: 0;
+	fill: var(--accent-text-color);
+
+	transition: opacity var(--timing-function);
+}
+
+.agreement__checkbox:checked + .agreement__icon > .agreement__icon--check {
+	opacity: 1;
+}
+
+.agreement__text {
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: var(--primary-text-color);
+
+	user-select: none;
+
+	@include mq(not-desk) {
+		font-size: 12px;
+		line-height: 1.16;
+
+}
+
+
+}
+
+.agreement__link {
+	color: var(--accent-text-color);
+	text-decoration: underline;
+	text-underline-position: under;
+	
+}
+
+.agreement__button  {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+
+	padding-left: 52px;
+	padding-right: 52px;
+
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+/* end --- agreement with the terms of the contract --- погодження з умовами договору --- end  */

@@ -13,6 +13,15 @@
 	margin-bottom: 65px;
 
 	gap: 8px;
+
+
+		@include mq(mob-only) {
+		width: 400px;
+	
+}
+
+
+	
 // 	& &__item + &__item {
 // 	margin-left: 8px;
 // }

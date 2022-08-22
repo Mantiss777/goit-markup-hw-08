@@ -7,18 +7,38 @@
 	padding-bottom: 60px;
 
 	background-color: var(--accent-bg-color);
+
 	
 
 	&__container {
 		display: flex;
 		justify-content: flex-start;
 		flex-wrap:wrap;
+		
+			@include mq(not-desk) {
+				gap: 60px;
+				justify-content: center;
+			}
+
+		
+		
+		
+		
+		
 	
+	}
+
+
+	&__wrap {
+		text-align: center;
+
+
 	}
 
 
 	&__title {
 		color: var(--wite-color);
+		text-align: center;
 	}
 
 }

@@ -56,11 +56,20 @@
 
 .social__wrap--footer {
 	margin-left: 70px;
+
+			@include mq(not-desk) {
+				margin-left: 0;
+			}
+
 }
 
 .social__list--footer {
 	display: flex;
 	justify-content: space-between;
+
+
+
+
 }
 
 .social__link--footer {

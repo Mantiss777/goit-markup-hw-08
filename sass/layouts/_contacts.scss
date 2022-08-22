@@ -6,20 +6,47 @@
 
 .contact {
 	margin-left: auto;
+
+	
 }
 
 .contact__list {
 	display: flex;
 	font-weight: 500;
 	letter-spacing: 0.02em;
+	padding-top: 24px;
+	padding-bottom: 24px;
+
+	@include mq(mob-only) {
+		display: none;
+	
+}
+
+		@include mq(tab-only) {
+		
+		flex-wrap: wrap;
+		
+		gap: 10px;
+		width: 150px;
+
+		padding-top: 20px;
+		padding-bottom: 20px;
+	
+}
+
+
 
 	& .contact__item + .contact__item{
 		margin-left: 50px;
+		
+	@include mq(tab-only) {
+		margin-left: 0;
+	
 }
 
-
 }
 
+}	
 
 .contact__data {
 	display: flex;
@@ -34,9 +61,7 @@
 
 }
 
-	padding-top: 24px;
-	padding-bottom: 24px;
-	
+
 
 	text-decoration: inherit;
 
@@ -58,12 +83,22 @@
 	width: 16px;
 	height: 12px;
 	margin-right: 10px;
+
+		@include mq(not-desk) {
+			width: 14px;
+			height: 10px;
+}
 }
 
 .contact__phone-icon{
 	width: 10px;
 	height: 16px;
 	margin-right: 10px;
+
+		@include mq(not-desk) {
+			width: 10px;
+			height: 14px;
+}
 }
 
 

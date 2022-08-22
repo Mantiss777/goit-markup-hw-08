@@ -8,11 +8,25 @@
 .nav {
 	display: flex;
 	align-items: center;
+
+
+		@include mq(mob-only) {
+			padding-top: 16px;
+			padding-bottom: 16px;
+	
+}
+
+	
 }
 
 .nav__list {
 	display: flex;
 	margin-left: 93px;
+
+	@include mq(mob-only) {
+		display: none;
+	
+}
 
 	& .nav__item + .nav__item{
 	margin-left: 50px;
@@ -37,6 +51,7 @@
 	color: var(--title-text-color);
 
 	transition: color var(--timing-function);
+
 
 		&::before {
 			display: inline-block;

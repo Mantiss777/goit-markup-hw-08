@@ -7,12 +7,21 @@
 .footer__form-wrap{
 	margin-left: 93px;
 
+		@include mq(not-desk) {
+		margin-left: 0;
+		}
+
 }
 
 
 .subscription {
 	display: flex;
 	gap: 12px;
+
+		@include mq(not-desk) {
+		justify-content: center;
+		flex-wrap:wrap;
+		gap: 20px;
 
 		&__label {
 			font-size: 16px;
@@ -24,8 +33,11 @@
 			letter-spacing: 0.03em;
 
 			color: rgba(255, 255, 255, 0.6);
+		}
+
 
 }
+
 }
 
 
