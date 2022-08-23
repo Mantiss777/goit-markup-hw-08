@@ -41,8 +41,7 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 		
-	min-width: 528px;
-	min-height: 581px;
+
 	padding: 40px;
 
 	background-color: var(--primary-bg-color);
@@ -50,12 +49,26 @@
 	border-radius: 4px;
 
 
-	@include mq(not-desk) {
-		min-width: 450px;
+
+	@include mq(mob) {
+		min-width: 320px;
 		min-height: 609px;
-}
+    }
+    @include mq(tab) {
+   		min-width: 450px;
+		min-height: 609px;
+    }
+    @include mq(desk) {
+       	min-width: 528px;
+		min-height: 581px;
+    }
+
+
+
 
 }
+
+
 
 
 // end --- modal -Модальне вікно --- end
