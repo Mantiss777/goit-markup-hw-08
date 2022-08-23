@@ -1560,5 +1560,13 @@ body {
   letter-spacing: 0.03em;
   color: var(--wite-color);
 }
+@media (max-width: 479px) {
+  .example__ticket .example__comment {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+}
 
 /* <!--end --- example Приклади робіт--- end --> *//*# sourceMappingURL=main.css.map */
