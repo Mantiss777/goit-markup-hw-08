@@ -137,8 +137,7 @@ body {
 }
 @media screen and (min-width: 480px) {
   .container {
-    max_width: 480px;
-    width: 100%;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -255,6 +254,8 @@ body {
 */
 .footer__form-wrap {
   margin-left: 93px;
+  max-width: 570px;
+  width: 100%;
 }
 @media screen and (max-width: 1199.98px) {
   .footer__form-wrap {
@@ -262,30 +263,37 @@ body {
   }
 }
 
-.subscription {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 12px;
+@media screen and (min-width: 1200px) {
+  .subscription {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 12px;
+  }
+}
+.subscription__label {
+  display: block;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
 }
 @media screen and (max-width: 1199.98px) {
-  .subscription {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 20px;
-  }
   .subscription__label {
-    font-size: 16px;
-    line-height: 1.25;
-    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscription__label {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
 }
 
 .subscription__input {
   padding: 15px;
+  max-width: 450px;
+  width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -316,6 +324,12 @@ body {
   letter-spacing: 0.06em;
   border: 0;
   fill: var(--primary-bg-color);
+}
+@media screen and (max-width: 1199.98px) {
+  .subscription__button {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /**
@@ -1420,6 +1434,11 @@ body {
   color: var(--wite-color);
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer__title {
+    text-align: left;
+  }
+}
 
 /*===============================
 		Portfolio
@@ -1500,11 +1519,6 @@ body {
   }
 }
 
-.example__item {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
 @media screen and (min-width: 480px) {
   .example__item {
     width: 450px;
@@ -1522,7 +1536,14 @@ body {
 }
 
 .example__link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
   -webkit-transition: -webkit-box-shadow var(--timing-function);
   transition: -webkit-box-shadow var(--timing-function);
   transition: box-shadow var(--timing-function);
@@ -1536,6 +1557,9 @@ body {
 
 .example__note {
   padding: 20px 24px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
@@ -1589,8 +1613,8 @@ body {
   width: 100%;
   height: 100%;
   background: var(--bg-absolut-exempel);
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
   -webkit-transition: -webkit-transform var(--timing-function);
   transition: -webkit-transform var(--timing-function);
   transition: transform var(--timing-function);

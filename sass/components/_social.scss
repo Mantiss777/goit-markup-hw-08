@@ -7,7 +7,7 @@
 .social__list {
 	display: flex;
 	// justify-content: space-between;
-	justify-content:center;
+	justify-content: center;
 	gap: 10px;
 
 	padding-left: 32px;
@@ -26,19 +26,17 @@
 	border: none;
 	cursor: pointer;
 
-
 	color: var(--icon-svg);
 	border-radius: 50%;
 
-	transition: color var(--timing-function), fill var(--timing-function), background-color var(--timing-function) ;
+	transition: color var(--timing-function), fill var(--timing-function), background-color var(--timing-function);
 
-		&:hover,
-		&__link:focus {
-			background-color: var(--accent-text-color);
-			color: var(--wite-color);
-			/* outline: none; */
-}
-
+	&:hover,
+	&__link:focus {
+		background-color: var(--accent-text-color);
+		color: var(--wite-color);
+		/* outline: none; */
+	}
 }
 
 .social__icon {
@@ -48,42 +46,28 @@
 	fill: currentColor;
 }
 
-
-
 /*===============================
 		--- social link in footer  ---
 =================================*/
 
-
-
 .social__wrap--footer {
 	margin-left: 70px;
-	
 
-			@include mq(not-desk) {
-				margin-left: 0;
-			}
-
+	@include mq(not-desk) {
+		margin-left: 0;
+	}
 }
 
 .social__list--footer {
 	display: flex;
-	
-	gap:10px;
+
+	gap: 10px;
 	// justify-content: space-between;
-
-
-
-
 }
 
 .social__link--footer {
-	
-
 	color: var(--wite-color);
 	background-color: var(--icon-bg);
-
 }
-
 
 // end --- social link  --- end

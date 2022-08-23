@@ -1,56 +1,49 @@
-	/* <!-- example Приклади робіт --> */
+/* <!-- example Приклади робіт --> */
 
 .example__list {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
-	
-
 
 	// @include mq(tab) {
 	// 	justify-content: ;
 	// 	}
-	
-		@include mq(mob-only) {
-		justify-content: center;
-		}
 
+	@include mq(mob-only) {
+		justify-content: center;
+	}
 }
 
 .example__item {
-	
-  		flex-grow: 1;
-		
-		@include mq(mob) {
-			width: 450px;
-					}
-		@include mq(tab) {
-			width: 354px;
-		}
-		@include mq(desk) {
-			width: 370px;
-   		}
+	@include mq(mob) {
+		width: 450px;
+	}
+	@include mq(tab) {
+		width: 354px;
+	}
+	@include mq(desk) {
+		width: 370px;
+	}
 }
 
-
-
-.example__link{
-	display: block;
+.example__link {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
 
 	transition: box-shadow var(--timing-function);
 
-		&:hover,
-		&:focus {
-			outline: transparent;
-			box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-
-}
+	&:hover,
+	&:focus {
+		outline: transparent;
+		box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+	}
 }
 
 .example__note {
 	padding: 20px 24px;
-	
 
+	flex-grow: 1;
 
 	border-left: 1px solid var(--border-color);
 	border-right: 1px solid var(--border-color);
@@ -61,18 +54,14 @@
 	margin-top: 0;
 	margin-bottom: 4px;
 
-	
-
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 0.06em;
 
 	color: var(--title-text-color);
-
 }
 
 .example__description {
-
 	margin-top: 0;
 	margin-bottom: 0;
 
@@ -80,21 +69,17 @@
 	line-height: 1.88;
 }
 
-
-.example__link:hover .example__ticket ,
+.example__link:hover .example__ticket,
 .example__link:focus .example__ticket {
 	outline: transparent;
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-	opacity:1;
+	opacity: 1;
 	transform: translateY(0%);
-
 }
 
 .example__wrap {
 	position: relative;
 	overflow: hidden;
-	
-	
 }
 
 .example__ticket {
@@ -110,13 +95,12 @@
 
 	width: 100%;
 	height: 100%;
-	
+
 	background: var(--bg-absolut-exempel);
-		
-	transform: translateY(100%);
+
+	transform: translateY(101%);
 
 	transition: transform var(--timing-function);
-	
 }
 
 .example__comment {
@@ -126,27 +110,21 @@
 	margin-bottom: 0;
 	padding-left: 24px;
 	padding-right: 24px;
-	
 }
 
 .example__ticket .example__comment {
-	
 	font-size: 18px;
 	line-height: 1.56;
 	letter-spacing: 0.03em;
 
 	color: var(--wite-color);
-	
 
-@media (max-width: 479px) {
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 1.71;
-	letter-spacing: 0.03em;
+	@media (max-width: 479px) {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1.71;
+		letter-spacing: 0.03em;
+	}
 }
 
-
-}
-
-
-	/* <!--end --- example Приклади робіт--- end --> */
+/* <!--end --- example Приклади робіт--- end --> */

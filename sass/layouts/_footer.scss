@@ -8,42 +8,37 @@
 
 	background-color: var(--accent-bg-color);
 
-
-	
-
-		@include mq(not-desk) {
-			text-align: center;
-			}
+	@include mq(not-desk) {
+		text-align: center;
+	}
 
 	&__container {
 		display: flex;
 		justify-content: flex-start;
-		flex-wrap:wrap;
+		flex-wrap: wrap;
 
 		align-items: baseline;
-		
-			@include mq(not-desk) {
-				gap: 60px;
-				justify-content: center;
-			}
-	
-	}
 
+		@include mq(not-desk) {
+			gap: 60px;
+			justify-content: center;
+		}
+	}
 
 	&__wrap {
 		@include mq(not-desk) {
 			text-align: center;
-			}
-
-
+		}
 	}
-
 
 	&__title {
 		color: var(--wite-color);
 		text-align: center;
-	}
 
+		@include mq(desk) {
+			text-align: left;
+		}
+	}
 }
 
 // end ---- Footer  --- end
