@@ -6,7 +6,9 @@
 
 .social__list {
 	display: flex;
-	justify-content: space-between;
+	// justify-content: space-between;
+	justify-content:center;
+	gap: 10px;
 
 	padding-left: 32px;
 	padding-right: 32px;
@@ -56,6 +58,7 @@
 
 .social__wrap--footer {
 	margin-left: 70px;
+	
 
 			@include mq(not-desk) {
 				margin-left: 0;
@@ -65,7 +68,9 @@
 
 .social__list--footer {
 	display: flex;
-	justify-content: space-between;
+	
+	gap:10px;
+	// justify-content: space-between;
 
 
 
@@ -73,7 +78,7 @@
 }
 
 .social__link--footer {
-	margin-right: 10px;
+	
 
 	color: var(--wite-color);
 	background-color: var(--icon-bg);

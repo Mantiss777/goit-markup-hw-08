@@ -8,7 +8,7 @@
 
 .filter {
 	display: flex;
-	justify-content: center;
+	// justify-content: center;
 	flex-wrap:wrap;
 	margin-bottom: 65px;
 
@@ -17,6 +17,14 @@
 
 		@include mq(mob-only) {
 		max-width: 400px;
+	
+}
+		@include mq(tab) {
+		justify-content: center;
+	
+}
+		@include mq(desk) {
+		justify-content: center;
 	
 }
 

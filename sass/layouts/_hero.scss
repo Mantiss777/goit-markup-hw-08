@@ -17,8 +17,8 @@
 
 
 		&__overlay {
-			// max-width: 480px;
-			max-width: 768px;
+			
+			max-width: 1600px;
 			height: 600px;
 
 
@@ -43,7 +43,7 @@
 		@include mq(tab) {
 		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 		url(../images/hero_bg@1x_tab.jpg);
-		max-width: 1600px;
+		
 		
 		@include mq(retina) {
 			background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -55,7 +55,7 @@
 		@include mq(desk) {
 		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 		url(../images/hero_bg@1x_tab.jpg);
-		max-width: 1600px;
+		
 
 		@include mq(retina) {
 			background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -69,7 +69,8 @@
 }
 
 		&__title {
-			width: 694px;
+			max-width: 694px;
+			width: 100%;
 			margin-top: 0;
 			margin-right: auto;
 			margin-left: auto;
@@ -90,7 +91,7 @@
 
 		
 		@include mq(not-desk) {
-			width: 360px;
+			max-width: 360px;
    		}
 
 

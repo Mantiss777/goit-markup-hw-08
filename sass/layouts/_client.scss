@@ -6,24 +6,36 @@
 
 	&__list {
 		display: flex;
-		justify-content: space-between;
 		flex-wrap:wrap;
 		gap: 30px;
+
+		justify-content: center;
+
+	
+
+
+
+
+
 	}
 
 	&__link {
-		// width: 170px;
+		width: 210px;
 		height: 92px;
+		justify-content: center;
 
 
 	@include mq(mob) {
         width: 210px;
+		
     }
     @include mq(tab) {
         width: 226px;
+		
     }
     @include mq(desk) {
         width: 170px;
+		
     }
 
 

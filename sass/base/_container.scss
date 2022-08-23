@@ -11,8 +11,10 @@
     padding-left: 15px;
     padding-right: 15px;
 
+
     @include mq(mob) {
-        width: 480px;
+        max_width: 480px;
+        width: 100%;
     }
     @include mq(tab) {
         width: 768px;

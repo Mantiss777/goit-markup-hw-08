@@ -7,10 +7,19 @@
 	
 
 
+	// @include mq(tab) {
+	// 	justify-content: ;
+	// 	}
+	
+		@include mq(mob-only) {
+		justify-content: center;
+		}
+
 }
 
 .example__item {
 	
+  		flex-grow: 1;
 		
 		@include mq(mob) {
 			width: 450px;
@@ -40,6 +49,8 @@
 
 .example__note {
 	padding: 20px 24px;
+	
+
 
 	border-left: 1px solid var(--border-color);
 	border-right: 1px solid var(--border-color);
@@ -50,6 +61,8 @@
 	margin-top: 0;
 	margin-bottom: 4px;
 
+	
+
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 0.06em;
@@ -59,6 +72,7 @@
 }
 
 .example__description {
+
 	margin-top: 0;
 	margin-bottom: 0;
 
