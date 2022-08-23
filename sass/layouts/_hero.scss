@@ -26,29 +26,40 @@
 			background-position: center;
 			background-size: cover;
 
-		background-image: url(../images/hero_bg@1x_mob.jpg);
+
+
+
+
+
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+		 url(../images/hero_bg@1x_mob.jpg);
 
 		@include mq(retina) {
-			background-image: url(../images/hero_bg@2x_mob.jpg);
+			background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url(../images/hero_bg@2x_mob.jpg);
 		}
 		
 
 		@include mq(tab) {
-		background-image: url(../images/hero_bg@1x_tab.jpg);
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+		url(../images/hero_bg@1x_tab.jpg);
 		max-width: 1600px;
 		
 		@include mq(retina) {
-			background-image: url(../images/hero_bg@2x_tab.jpg);
+			background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url(../images/hero_bg@2x_tab.jpg);
 		}
 		}
 
 
 		@include mq(desk) {
-		background-image: url(../images/hero_bg@1x_tab.jpg);
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+		url(../images/hero_bg@1x_tab.jpg);
 		max-width: 1600px;
 
 		@include mq(retina) {
-			background-image: url(../images/hero_bg@2x_tab.jpg);
+			background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url(../images/hero_bg@2x_tab.jpg);
 		}
 		}
 
